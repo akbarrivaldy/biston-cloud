@@ -1,0 +1,23 @@
+.brand-use {
+  width: 100%;
+  padding: 40px 0;
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .brand-use-logo {
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      // For vertical logo
+      &.vertical {
+        width: unset;
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.features {
+  padding: 40px 0;
+  .f-box {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    user-select: none;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    &:hover {
+      transition: 0.5s;
+      border: 2px solid $secondary;
+    }
+    .f-head {
+      padding: 10px 0;
+      i {
+        font-size: 3rem;
+      }
+    }
+    .f-title {
+      h3 {
+        margin: 0;
+      }
+    }
+    .f-content {
+      padding: 10px 0;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

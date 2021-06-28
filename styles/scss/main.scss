@@ -1,0 +1,66 @@
+// Import Fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// Customizing Bootstrap
+@import "../../node_modules/bootstrap/scss/functions";
+
+$primary: rgb(120, 157, 224);
+$secondary: rgb(61, 90, 128);
+$secondaryHover: rgb(40, 56, 77);
+$light: rgb(255, 255, 255);
+
+$navCollapseWidth: 250px;
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Custom Style
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background: $light;
+  overflow-x: hidden;
+}
+button {
+  box-shadow: none !important;
+}
+.custom-shadow {
+  box-shadow: 0px 0px 2px 1px #000 !important;
+}
+.btn-global {
+  background: $secondary;
+  padding: 10px 25px;
+  border-radius: 0;
+  color: $light;
+  position: relative;
+  transform-style: preserve-3d;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    bottom: -5px;
+    left: 5px;
+    right: -5px;
+    display: none;
+    background: rgba(0, 0, 0, 0.3);
+    transform: translateZ(-1px);
+  }
+  &:hover {
+    background: $secondaryHover;
+    color: $light;
+    transform: scale(1.03);
+    transition: 0.2s;
+    &::before {
+      display: block;
+      transition: 1s;
+    }
+  }
+}
+
+// Importing Compnents Style
+@import "navbar";
+@import "hero";
+@import "features";
+@import "branduse";
+// Responsive
+@import "responsive";

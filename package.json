@@ -1,0 +1,19 @@
+{
+  "name": "biston-cloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch styles/scss/main.scss:styles/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@splidejs/splide": "^2.4.21",
+    "aos": "^3.0.0-beta.6",
+    "bootstrap": "^5.0.2",
+    "jquery": "^3.6.0"
+  }
+}

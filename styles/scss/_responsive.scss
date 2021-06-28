@@ -1,0 +1,67 @@
+@media screen and (max-width: 991px) {
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 98;
+  }
+  .navbar {
+    .navCollapse {
+      position: absolute;
+      background: $secondary;
+      left: -$navCollapseWidth;
+      top: 0;
+      bottom: 0;
+      right: auto;
+      width: $navCollapseWidth;
+      min-height: 100vh;
+      z-index: 99;
+      transition: all ease-in-out 0.3s;
+      &:hover {
+        .nav-link {
+          &:hover {
+            background: $secondaryHover;
+          }
+        }
+      }
+      &.show {
+        left: 0px;
+        transition: all ease-in-out 0.3s;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 0;
+        .nav-link {
+          &:hover {
+            &::after {
+              width: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section.hero {
+    .hero-text {
+      text-align: center !important;
+    }
+  }
+  section.features {
+    .f-box {
+      border: none !important;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  //
+}
