@@ -1,5 +1,9 @@
 // Import Fonts
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "Deppresionist";
+  src: url("../../assets/fonts/Depressionist_3_Revisited_2010.ttf");
+}
 
 // Customizing Bootstrap
 @import "../../node_modules/bootstrap/scss/functions";
@@ -8,9 +12,11 @@ $primary: rgb(120, 157, 224);
 $secondary: rgb(61, 90, 128);
 $secondaryHover: rgb(40, 56, 77);
 $light: rgb(255, 255, 255);
+$lightHover: rgb(233, 233, 233);
+$dark: #212529;
 
 $navCollapseWidth: 250px;
-$contentPadding: 40px 0;
+$contentPadding: 60px 0;
 $headingSize: 2rem;
 
 @import "../../node_modules/bootstrap/scss/variables";
@@ -58,6 +64,9 @@ button {
     }
   }
 }
+.btn-global-block {
+  width: 100% !important;
+}
 .headingContent {
   font-size: $headingSize;
 }
@@ -68,6 +77,7 @@ button {
 @import "features";
 @import "about";
 @import "testimonials";
+@import "pricing";
 @import "branduse";
 // Responsive
 @import "responsive";
