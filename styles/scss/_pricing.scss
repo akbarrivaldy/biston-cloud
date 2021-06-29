@@ -1,0 +1,72 @@
+.pricing {
+  padding: $contentPadding;
+  .pricing-box {
+    padding: 20px;
+    border-radius: 15px;
+    background: $secondary;
+    color: $light;
+
+    &.popular {
+      background: $light;
+      color: $dark;
+      position: relative;
+      &::after {
+        content: "Popular";
+        position: absolute;
+        top: 25px;
+        right: 0;
+        color: red;
+        font-size: 1.2rem;
+        font-family: "Deppresionist";
+        text-transform: uppercase;
+        transform: rotate(45deg);
+      }
+      .pricing-features {
+        .btn-global {
+          background: $secondary;
+          color: $light;
+          &:hover {
+            background: $secondaryHover;
+          }
+        }
+      }
+    }
+    .pricing-head {
+      text-align: center;
+      .pricing-head-price {
+        padding: 20px 0;
+        h4 {
+          margin: 0;
+          font-size: 3rem;
+        }
+      }
+      .pricing-head-name {
+        padding: 10px 0;
+        h6 {
+          margin: 0;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .pricing-features {
+      padding: 40px 0;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          text-align: center;
+          margin: 5px 0;
+          font-size: 1.2rem;
+        }
+      }
+      .btn-global {
+        background: $light;
+        color: $dark;
+        &:hover {
+          background: $lightHover;
+        }
+      }
+    }
+  }
+}
