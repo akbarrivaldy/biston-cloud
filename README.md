@@ -7,4 +7,4 @@ Biston Cloud is a cloud hosting landing page
 * SASS
 * AOS
 * SplideJS
-* FontAweomse
+* FontAwesome
