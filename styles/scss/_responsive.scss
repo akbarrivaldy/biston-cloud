@@ -60,8 +60,19 @@
       border: none !important;
     }
   }
+  section.about {
+    .about-text {
+      text-align: center;
+    }
+  }
 }
 
 @media screen and (max-width: 575px) {
-  //
+  .navbar {
+    .navbar-brand {
+      #explainMeans {
+        display: none;
+      }
+    }
+  }
 }

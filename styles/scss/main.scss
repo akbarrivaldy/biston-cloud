@@ -10,6 +10,8 @@ $secondaryHover: rgb(40, 56, 77);
 $light: rgb(255, 255, 255);
 
 $navCollapseWidth: 250px;
+$contentPadding: 40px 0;
+$headingSize: 2rem;
 
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
@@ -56,11 +58,16 @@ button {
     }
   }
 }
+.headingContent {
+  font-size: $headingSize;
+}
 
 // Importing Compnents Style
 @import "navbar";
 @import "hero";
 @import "features";
+@import "about";
+@import "testimonials";
 @import "branduse";
 // Responsive
 @import "responsive";

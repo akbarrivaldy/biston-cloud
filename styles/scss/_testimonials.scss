@@ -1,0 +1,41 @@
+.testimonials {
+  padding: $contentPadding;
+
+  .testi-box {
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 7px;
+
+    .testi-head {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .testi-head-avatar {
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
+      }
+      .testi-head-name {
+        margin-left: 10px;
+        .testi-fullname {
+          font-size: 1.2rem;
+          font-weight: 500;
+          margin: 0;
+        }
+        .testi-profile {
+          margin: 0;
+          font-size: 0.9rem;
+          color: #cecece;
+        }
+      }
+    }
+    .testi-content {
+      margin-top: 20px;
+      p {
+        font-weight: 300;
+      }
+    }
+  }
+}
