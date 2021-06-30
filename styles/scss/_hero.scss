@@ -1,27 +1,17 @@
 .hero {
   background: $primary;
-  padding: $contentPadding;
+  padding: 80px 0;
   .container {
     .hero-text {
       color: $light;
     }
     .hero-img {
-      img {
+      svg {
         width: 100%;
-        // animation: heroImg 5s infinite;
+        height: auto;
       }
     }
   }
 }
 
-@keyframes heroImg {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.03);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+@import "svgAnimation";
