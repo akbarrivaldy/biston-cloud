@@ -14,6 +14,29 @@ $(document).ready(function () {
     pauseOnHover: false,
   }).mount()
 
+  // To Top Button
+  const btnTop = document.getElementById("toTopBtn")
+
+  window.onscroll = function () {
+    scrollFunction()
+  }
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      btnTop.classList.add("btn-toTopShow")
+    } else {
+      btnTop.classList.remove("btn-toTopShow")
+    }
+  }
+
+  btnTop.addEventListener("click", function () {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  })
+
   // Navbar Collapse
   $(".navbar-toggler").on("click", function () {
     $(".navCollapse").toggleClass("show")
