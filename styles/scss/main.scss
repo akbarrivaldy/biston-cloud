@@ -67,6 +67,41 @@ button {
 .btn-global-block {
   width: 100% !important;
 }
+.btn-toTop {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: $secondary;
+  display: none;
+  border-radius: 0;
+
+  &:hover {
+    background: $secondaryHover;
+    transition: 0.5s;
+  }
+  &.btn-toTopShow {
+    display: block;
+    animation: btnToTop 0.5s ease-out;
+
+    @keyframes btnToTop {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+  }
+  i {
+    font-size: 1.4rem;
+    color: $light;
+    margin: 0;
+  }
+}
 .headingContent {
   font-size: $headingSize;
 }
