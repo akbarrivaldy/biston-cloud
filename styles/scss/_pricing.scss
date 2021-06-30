@@ -1,5 +1,10 @@
 .pricing {
   padding: $contentPadding;
+  background: $primary;
+
+  h1 {
+    color: $light;
+  }
   .pricing-box {
     padding: 20px;
     border-radius: 15px;

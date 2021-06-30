@@ -120,24 +120,106 @@ button {
 
 .hero {
   background: #789de0;
-  padding: 60px 0;
+  padding: 80px 0;
 }
 .hero .container .hero-text {
   color: white;
 }
-.hero .container .hero-img img {
+.hero .container .hero-img svg {
   width: 100%;
+  height: auto;
 }
 
-@keyframes heroImg {
+#Shield {
+  animation: shieldPopup 3s ease-out;
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: all 0.3s;
+}
+#Shield:hover {
+  transform: scale(1.15);
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: all 0.3s;
+}
+
+@keyframes shieldPopup {
   0% {
+    transform: scale(0);
+  }
+  70%, 100% {
     transform: scale(1);
   }
-  50% {
-    transform: scale(1.03);
+}
+#Server1 {
+  animation: serverFall 3s ease-out;
+  transition: 0.3s;
+}
+#Server1:hover {
+  transform: translateX(20px);
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: all 0.3s;
+}
+
+#Server2 {
+  animation: serverFall 2.5s ease-out;
+  transition: 0.3s;
+}
+#Server2:hover {
+  transform: translateX(20px);
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: all 0.3s;
+}
+
+#Server3 {
+  animation: serverFall 2s ease-out;
+  transition: 0.3s;
+}
+#Server3:hover {
+  transform: translateX(20px);
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: all 0.3s;
+}
+
+@keyframes serverFall {
+  0%, 70% {
+    transform: translateY(-100%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#Head {
+  animation: headRotate 2s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes headRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
+#LeftHand {
+  animation: leftHand 2s ease-in-out infinite alternate;
+  transform-origin: top left;
+  transform-box: fill-box;
+}
+
+@keyframes leftHand {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-10deg);
   }
 }
 .features {
@@ -149,12 +231,11 @@ button {
   flex-direction: column;
   text-align: center;
   user-select: none;
-  border-radius: 10px;
-  border: 2px solid transparent;
+  border-radius: 7px;
 }
 .features .f-box:hover {
   transition: 0.5s;
-  border: 2px solid #3d5a80;
+  background: #e9e9e9;
 }
 .features .f-box .f-head {
   padding: 10px 0;
@@ -219,6 +300,10 @@ button {
 
 .pricing {
   padding: 60px 0;
+  background: #789de0;
+}
+.pricing h1 {
+  color: white;
 }
 .pricing .pricing-box {
   padding: 20px;

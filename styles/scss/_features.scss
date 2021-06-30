@@ -6,11 +6,10 @@
     flex-direction: column;
     text-align: center;
     user-select: none;
-    border-radius: 10px;
-    border: 2px solid transparent;
+    border-radius: 7px;
     &:hover {
       transition: 0.5s;
-      border: 2px solid $secondary;
+      background: $lightHover;
     }
     .f-head {
       padding: 10px 0;

@@ -1,0 +1,124 @@
+// Shield
+#Shield {
+  animation: shieldPopup 3s ease-out;
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.15);
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all 0.3s;
+  }
+}
+
+@keyframes shieldPopup {
+  0% {
+    transform: scale(0);
+  }
+  70%,
+  100% {
+    transform: scale(1);
+  }
+}
+
+// Server
+#Server1 {
+  animation: serverFall 3s ease-out;
+  transition: 0.3s;
+  &:hover {
+    transform: translateX(20px);
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all 0.3s;
+  }
+}
+#Server2 {
+  animation: serverFall 2.5s ease-out;
+  transition: 0.3s;
+  &:hover {
+    transform: translateX(20px);
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all 0.3s;
+  }
+}
+#Server3 {
+  animation: serverFall 2s ease-out;
+  transition: 0.3s;
+  &:hover {
+    transform: translateX(20px);
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all 0.3s;
+  }
+}
+
+@keyframes serverFall {
+  0%,
+  70% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// Head
+#Head {
+  animation: headRotate 2s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes headRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+// Hands
+#LeftHand {
+  animation: leftHand 2s ease-in-out infinite alternate;
+  transform-origin: top left;
+  transform-box: fill-box;
+}
+
+@keyframes leftHand {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+// $serverOff: rgb(221, 4, 4);
+
+// $serverOn: rgb(11, 194, 11);
+// // Server1
+// #Server1Light1 path {
+//   animation: serverOn 5s 1;
+//   fill: $serverOff;
+// }
+// #Server1Light2 path {
+//   animation: serverOn 5s 5s infinite;
+//   fill: $serverOff;
+// }
+// #Server1Light3 path {
+//   animation: serverOn 5s 7s infinite;
+//   fill: $serverOff;
+// }
+
+// @keyframes serverOn {
+//   0%,
+//   100% {
+//     fill: $serverOn;
+//   }
+// }
