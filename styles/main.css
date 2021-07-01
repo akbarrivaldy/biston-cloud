@@ -279,19 +279,88 @@ button {
 }
 .features .f-box .f-title h3 {
   margin: 0;
+  font-size: 1.2rem;
 }
 .features .f-box .f-content {
   padding: 10px 0;
 }
 .features .f-box .f-content p {
   margin: 0;
+  font-size: 0.9rem;
+  color: #868686;
 }
 
 .about .row {
   padding: 60px 0;
 }
+.about .about-text h1 {
+  display: inline-block;
+}
+.about .about-text .about-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.about .about-text .about-content .about-content-icon {
+  padding: 10px;
+  width: 20%;
+}
+.about .about-text .about-content .about-content-icon i {
+  font-size: 2.5em;
+  color: #789de0;
+}
+.about .about-text .about-content .about-content-desc {
+  width: 80%;
+  padding: 10px;
+}
+.about .about-text .about-content .about-content-desc h3 {
+  font-size: 1.2rem;
+}
+.about .about-text .about-content .about-content-desc p {
+  font-size: 0.9rem;
+  color: #868686;
+}
+.about .about-img {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
 .about .about-img img {
-  width: 100%;
+  width: 80%;
+}
+.about .about-img .bolt {
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.about .about-img .bolt i {
+  font-size: 2rem;
+  color: #e9e923;
+}
+.about .about-img .lock {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+.about .about-img .lock i {
+  font-size: 1.5rem;
+  color: #dfdfdf;
 }
 
 .testimonials {
@@ -330,14 +399,16 @@ button {
 }
 .testimonials .testi-box .testi-content p {
   font-weight: 300;
+  font-size: 0.9rem;
 }
 
 .pricing {
   padding: 60px 0;
-  background: #789de0;
+  background: rgba(120, 157, 224, 0.1);
 }
 .pricing h1 {
-  color: white;
+  color: #3d5a80;
+  font-size: 2rem;
 }
 .pricing .pricing-box {
   padding: 20px;
@@ -383,7 +454,7 @@ button {
 }
 .pricing .pricing-box .pricing-head .pricing-head-name h6 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .pricing .pricing-box .pricing-features {
   padding: 40px 0;
@@ -396,7 +467,7 @@ button {
 .pricing .pricing-box .pricing-features ul li {
   text-align: center;
   margin: 5px 0;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 .pricing .pricing-box .pricing-features .btn-global {
   background: white;
@@ -476,14 +547,20 @@ button {
   section.features .f-box {
     border: none !important;
   }
-
-  section.about .about-text {
-    text-align: center;
-  }
 }
 @media screen and (max-width: 575px) {
   .navbar .navbar-brand #explainMeans {
     display: none;
+  }
+
+  .about .about-text .about-content {
+    flex-direction: column;
+  }
+  .about .about-text .about-content .about-content-icon {
+    width: 100%;
+  }
+  .about .about-text .about-content .about-content-desc {
+    width: 100%;
   }
 }
 

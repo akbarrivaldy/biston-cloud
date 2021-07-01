@@ -9,16 +9,19 @@
 @import "../../node_modules/bootstrap/scss/functions";
 
 $primary: rgb(120, 157, 224);
+$primaryHover: rgba(120, 157, 224, 0.1);
 $secondary: rgb(61, 90, 128);
 $secondaryHover: rgb(40, 56, 77);
 $light: rgb(255, 255, 255);
 $lightHover: rgb(233, 233, 233);
 $dark: #212529;
+$darkHover: rgb(134, 134, 134);
 
 $navCollapseWidth: 250px;
 $contentPadding: 60px 0;
 $headingSize: 2rem;
-
+$headingSize2: 1.2rem;
+$paragraphSize: 0.9rem;
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 

@@ -20,13 +20,13 @@
       .testi-head-name {
         margin-left: 10px;
         .testi-fullname {
-          font-size: 1.2rem;
+          font-size: $headingSize2;
           font-weight: 500;
           margin: 0;
         }
         .testi-profile {
           margin: 0;
-          font-size: 0.9rem;
+          font-size: $paragraphSize;
           color: #cecece;
         }
       }
@@ -35,6 +35,7 @@
       margin-top: 20px;
       p {
         font-weight: 300;
+        font-size: $paragraphSize;
       }
     }
   }
