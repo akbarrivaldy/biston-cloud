@@ -4,7 +4,6 @@
 
   h1 {
     color: $secondary;
-    font-size: $headingSize;
   }
   .pricing-box {
     padding: 20px;
@@ -15,18 +14,6 @@
     &.popular {
       background: $light;
       color: $dark;
-      position: relative;
-      &::after {
-        content: "Popular";
-        position: absolute;
-        top: 25px;
-        right: 0;
-        color: red;
-        font-size: 1.2rem;
-        font-family: "Deppresionist";
-        text-transform: uppercase;
-        transform: rotate(45deg);
-      }
       .pricing-features {
         .btn-global {
           background: $secondary;
@@ -44,6 +31,9 @@
         h4 {
           margin: 0;
           font-size: 3rem;
+          span {
+            font-size: 1rem;
+          }
         }
       }
       .pricing-head-name {

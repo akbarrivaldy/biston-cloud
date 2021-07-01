@@ -1,9 +1,5 @@
 // Import Fonts
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@font-face {
-  font-family: "Deppresionist";
-  src: url("../../assets/fonts/Depressionist_3_Revisited_2010.ttf");
-}
 
 // Customizing Bootstrap
 @import "../../node_modules/bootstrap/scss/functions";
@@ -19,7 +15,7 @@ $darkHover: rgb(134, 134, 134);
 
 $navCollapseWidth: 250px;
 $contentPadding: 60px 0;
-$headingSize: 2rem;
+$headingSize: 1.8rem;
 $headingSize2: 1.2rem;
 $paragraphSize: 0.9rem;
 @import "../../node_modules/bootstrap/scss/variables";
