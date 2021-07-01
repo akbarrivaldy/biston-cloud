@@ -1,6 +1,7 @@
 .about {
-  .row {
-    padding: $contentPadding;
+  padding: $contentPadding;
+  &.about-top {
+    background: $primaryHover;
   }
 
   .about-text {
@@ -39,7 +40,7 @@
     img {
       width: 80%;
     }
-    .bolt {
+    .about-bolt {
       padding: 10px;
       width: 60px;
       height: 60px;
@@ -57,7 +58,7 @@
       }
     }
 
-    .lock {
+    .about-lock {
       padding: 10px;
       width: 50px;
       height: 50px;
@@ -72,6 +73,60 @@
       i {
         font-size: 1.5rem;
         color: rgb(223, 223, 223);
+      }
+    }
+
+    .about-server {
+      padding: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $light;
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      i {
+        font-size: 1.5rem;
+        color: rgb(51, 0, 109);
+      }
+    }
+
+    .about-user {
+      padding: 10px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $light;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      i {
+        font-size: 1.5rem;
+        color: rgb(0, 47, 201);
+      }
+    }
+
+    .about-headset {
+      padding: 10px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $light;
+      position: absolute;
+      bottom: -20px;
+      right: 70px;
+      i {
+        font-size: 1.5rem;
+        color: rgb(51, 0, 109);
       }
     }
   }

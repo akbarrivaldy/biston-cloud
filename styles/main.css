@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@font-face {
-  font-family: "Deppresionist";
-  src: url("../../assets/fonts/Depressionist_3_Revisited_2010.ttf");
-}
 body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -87,7 +83,7 @@ button {
 }
 
 .headingContent {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .navbar {
@@ -290,8 +286,11 @@ button {
   color: #868686;
 }
 
-.about .row {
+.about {
   padding: 60px 0;
+}
+.about.about-top {
+  background: rgba(120, 157, 224, 0.1);
 }
 .about .about-text h1 {
   display: inline-block;
@@ -328,7 +327,7 @@ button {
 .about .about-img img {
   width: 80%;
 }
-.about .about-img .bolt {
+.about .about-img .about-bolt {
   padding: 10px;
   width: 60px;
   height: 60px;
@@ -341,11 +340,11 @@ button {
   top: 10px;
   right: 10px;
 }
-.about .about-img .bolt i {
+.about .about-img .about-bolt i {
   font-size: 2rem;
   color: #e9e923;
 }
-.about .about-img .lock {
+.about .about-img .about-lock {
   padding: 10px;
   width: 50px;
   height: 50px;
@@ -358,9 +357,60 @@ button {
   bottom: 10px;
   left: 20px;
 }
-.about .about-img .lock i {
+.about .about-img .about-lock i {
   font-size: 1.5rem;
   color: #dfdfdf;
+}
+.about .about-img .about-server {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+.about .about-img .about-server i {
+  font-size: 1.5rem;
+  color: #33006d;
+}
+.about .about-img .about-user {
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.about .about-img .about-user i {
+  font-size: 1.5rem;
+  color: #002fc9;
+}
+.about .about-img .about-headset {
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  position: absolute;
+  bottom: -20px;
+  right: 70px;
+}
+.about .about-img .about-headset i {
+  font-size: 1.5rem;
+  color: #33006d;
 }
 
 .testimonials {
@@ -377,8 +427,8 @@ button {
   align-items: center;
 }
 .testimonials .testi-box .testi-head .testi-head-avatar img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 .testimonials .testi-box .testi-head .testi-head-name {
@@ -408,7 +458,6 @@ button {
 }
 .pricing h1 {
   color: #3d5a80;
-  font-size: 2rem;
 }
 .pricing .pricing-box {
   padding: 20px;
@@ -419,18 +468,6 @@ button {
 .pricing .pricing-box.popular {
   background: white;
   color: #212529;
-  position: relative;
-}
-.pricing .pricing-box.popular::after {
-  content: "Popular";
-  position: absolute;
-  top: 25px;
-  right: 0;
-  color: red;
-  font-size: 1.2rem;
-  font-family: "Deppresionist";
-  text-transform: uppercase;
-  transform: rotate(45deg);
 }
 .pricing .pricing-box.popular .pricing-features .btn-global {
   background: #3d5a80;
@@ -448,6 +485,9 @@ button {
 .pricing .pricing-box .pricing-head .pricing-head-price h4 {
   margin: 0;
   font-size: 3rem;
+}
+.pricing .pricing-box .pricing-head .pricing-head-price h4 span {
+  font-size: 1rem;
 }
 .pricing .pricing-box .pricing-head .pricing-head-name {
   padding: 10px 0;
