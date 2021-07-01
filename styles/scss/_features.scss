@@ -20,12 +20,15 @@
     .f-title {
       h3 {
         margin: 0;
+        font-size: $headingSize2;
       }
     }
     .f-content {
       padding: 10px 0;
       p {
         margin: 0;
+        font-size: $paragraphSize;
+        color: $darkHover;
       }
     }
   }

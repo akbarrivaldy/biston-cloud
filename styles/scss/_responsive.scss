@@ -60,11 +60,6 @@
       border: none !important;
     }
   }
-  section.about {
-    .about-text {
-      text-align: center;
-    }
-  }
 }
 
 @media screen and (max-width: 575px) {
@@ -72,6 +67,19 @@
     .navbar-brand {
       #explainMeans {
         display: none;
+      }
+    }
+  }
+  .about {
+    .about-text {
+      .about-content {
+        flex-direction: column;
+        .about-content-icon {
+          width: 100%;
+        }
+        .about-content-desc {
+          width: 100%;
+        }
       }
     }
   }
