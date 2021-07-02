@@ -540,6 +540,53 @@ button {
   height: 100%;
 }
 
+.bottom-jumbotron {
+  background: #789de0;
+}
+.bottom-jumbotron .row {
+  padding: 60px;
+}
+.bottom-jumbotron h3 {
+  color: white;
+}
+
+footer .footer-links {
+  background: #28384d;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+footer .footer-links .footer-links-menu {
+  padding: 10px;
+}
+footer .footer-links .footer-links-menu h3 {
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 12px;
+}
+footer .footer-links .footer-links-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer .footer-links .footer-links-menu ul li,
+footer .footer-links .footer-links-menu ul a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  margin: 7px 0;
+}
+footer .footer-links .footer-links-menu ul li:hover,
+footer .footer-links .footer-links-menu ul a:hover {
+  color: white;
+}
+footer .footer-links .footer-links-menu.footer-links-menu-company h3 {
+  margin-bottom: 30px;
+}
+footer .footer-links .footer-links-menu.footer-links-menu-company p {
+  color: white;
+  font-size: 0.85rem;
+}
+
 @media screen and (max-width: 991px) {
   .overlay {
     position: absolute;

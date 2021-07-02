@@ -1,0 +1,42 @@
+footer {
+  .footer-links {
+    background: $secondaryHover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .footer-links-menu {
+      padding: 10px;
+      h3 {
+        font-size: $footerLinkTitle;
+        color: $light;
+        margin-bottom: 12px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li,
+        a {
+          text-decoration: none;
+          color: $semiTransparent;
+          font-size: $footerLinkAnchor;
+          margin: 7px 0;
+          &:hover {
+            color: $light;
+          }
+        }
+      }
+
+      &.footer-links-menu-company {
+        h3 {
+          margin-bottom: 30px;
+        }
+        p {
+          color: $light;
+          font-size: $footerLinkAnchor;
+        }
+      }
+    }
+  }
+}
