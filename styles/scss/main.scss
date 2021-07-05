@@ -12,12 +12,16 @@ $light: rgb(255, 255, 255);
 $lightHover: rgb(233, 233, 233);
 $dark: #212529;
 $darkHover: rgb(134, 134, 134);
+$semiTransparent: rgba(255, 255, 255, 0.6);
 
 $navCollapseWidth: 250px;
 $contentPadding: 60px 0;
 $headingSize: 1.8rem;
 $headingSize2: 1.2rem;
 $paragraphSize: 0.9rem;
+$footerLinkTitle: 0.9rem;
+$footerLinkAnchor: 0.85rem;
+
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 
@@ -113,5 +117,7 @@ button {
 @import "testimonials";
 @import "pricing";
 @import "branduse";
+@import "bottom-jumbotron";
+@import "footer";
 // Responsive
 @import "responsive";

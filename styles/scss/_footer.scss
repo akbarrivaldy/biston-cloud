@@ -1,0 +1,117 @@
+footer {
+  background: $secondaryHover;
+  .footer-links {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .footer-links-menu {
+      padding: 10px;
+      h3 {
+        font-size: $footerLinkTitle;
+        color: $light;
+        margin-bottom: 12px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li,
+        a {
+          text-decoration: none;
+          color: $semiTransparent;
+          font-size: $footerLinkAnchor;
+          margin: 7px 0;
+          &:hover {
+            color: $light;
+          }
+        }
+      }
+
+      &.footer-links-menu-company {
+        h3 {
+          margin-bottom: 30px;
+        }
+        p {
+          color: $light;
+          font-size: $footerLinkAnchor;
+        }
+        .footer-links-menu-icon {
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: space-between;
+          .social-icon {
+            width: 40px;
+            height: 40px;
+            background: $primary;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+              background: $secondary;
+            }
+            i {
+              color: $light;
+            }
+          }
+        }
+      }
+      .email-subscribe {
+        padding: 20px;
+        p {
+          color: $light;
+          margin: 0;
+          font-size: $paragraphSize;
+        }
+        .email-subscribe-box {
+          padding: 10px 0;
+          position: relative;
+          form {
+            display: flex;
+            height: 40px;
+            input[type="email"] {
+              background: $light;
+              border-radius: 0;
+              border: 2px solid transparent;
+              padding: 5px 10px;
+              height: 100%;
+              font-size: $paragraphSize;
+              margin: 0;
+              &:focus {
+                border: 2px solid $primary;
+                outline: none;
+              }
+            }
+            button {
+              margin: 0;
+              height: 100%;
+              padding: 5px 10px;
+              background: $primary;
+              border: none;
+              border-radius: 0;
+              font-size: $paragraphSize;
+              color: $light;
+              &:hover {
+                background: $secondary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-credits {
+    margin: 0;
+    padding: 20px 0;
+    hr {
+      color: $light;
+    }
+    p {
+      margin: 10px 0;
+      font-size: $paragraphSize;
+      color: $light;
+    }
+  }
+}
