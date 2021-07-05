@@ -47,17 +47,33 @@
       }
     }
   }
-}
 
-@media screen and (max-width: 767px) {
-  section.hero {
-    .hero-text {
-      text-align: center !important;
+  @media screen and (max-width: 767px) {
+    section.hero {
+      .hero-text {
+        text-align: center !important;
+      }
     }
-  }
-  section.features {
-    .f-box {
-      border: none !important;
+    section.features {
+      .f-box {
+        border: none !important;
+      }
+    }
+    footer {
+      .footer-links {
+        .footer-links-menu {
+          &.footer-links-menu-company {
+            .footer-links-menu-icon {
+              justify-content: center;
+              .social-icon {
+                width: 40px;
+                height: 40px;
+                margin: 0 10px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
